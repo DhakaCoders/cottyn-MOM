@@ -18,7 +18,7 @@ a, a:hover, a:focus, button:hover, button:focus{
 body {
     background: #ffffff;
     color: #616268;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -29,7 +29,7 @@ body {
 /*font-family: 'Source Sans Pro', sans-serif;*/
 p{
 	line-height: 1.8;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 a{
 	text-decoration: underline;
@@ -240,7 +240,7 @@ ul.ab-top-menu li,
 	margin: 0;
 	list-style: none;
 	margin: 0;
-	font-size: initial;
+
 }
 .reset-list li:before,
 ul.sub-menu li:before,

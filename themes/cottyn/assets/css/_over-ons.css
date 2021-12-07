@@ -1,0 +1,42 @@
+.over-ons-grids ul li:nth-child(2n+2) .over-ons-grid-img-ctlr{
+	order: 2;
+	width: 49%;
+}
+.over-ons-grids ul li:nth-child(2n+2) .over-ons-grid-desc-ctlr{
+	padding-left: 0;
+	padding-right: 100px;
+	width: 51%;
+}
+.over-ons-grid-cntlr{
+	display: flex;
+	align-items: center;
+	padding-bottom: 60px;
+}
+.over-ons-grid-img-ctlr{
+	width: 49%;
+}
+.over-ons-grid-desc-ctlr{
+	width: 49%;
+	padding-left: 90px;
+}
+.has-inline-bg img{
+	display: none;
+}
+.over-ons-grid-img{
+	height: 410px;
+	border-radius: 20px;
+}
+.large-img{
+	height: 650px;
+}
+.over-ons-grid-img-ctlr p{
+	margin-bottom: 0;
+	font-size: 13px;
+	padding-top: 3px;
+}
+ .oogd-title{
+ 	line-height: 1.3;
+ }
+ .oogd-title span{
+ 	color: #0084aa;
+ }

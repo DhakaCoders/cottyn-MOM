@@ -117,13 +117,29 @@ Responsive on 767px
 /**
 Slick slider
 */
-if( $('.responsive-slider').length ){
-    $('.responsive-slider').slick({
-      dots: true,
-      infinite: false,
-      autoplay: true,
-      autoplaySpeed: 4000,
+if( $('.quoteItemSlider').length ){
+    $('.quoteItemSlider').slick({
+      dots: false,
+      arrows: true,
+      infinite: true,
+      autoplay: false,
+      autoplaySpeed: 1000,
       speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow:$('.quote-sec .fl-prev-next .fl-prev'),
+      nextArrow:$('.quote-sec .fl-prev-next .fl-next')
+    });
+}
+
+if( $('.expertiseGridSlider').length ){
+    $('.expertiseGridSlider').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      speed: 1000,
       slidesToShow: 4,
       slidesToScroll: 1,
       responsive: [
@@ -133,7 +149,6 @@ if( $('.responsive-slider').length ){
             slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
           }
         },
         {
@@ -156,7 +171,6 @@ if( $('.responsive-slider').length ){
       ]
     });
 }
-
 
 if( $('#mapID').length ){
 var latitude = $('#mapID').data('latitude');
