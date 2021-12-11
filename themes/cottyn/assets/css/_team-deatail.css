@@ -1,0 +1,178 @@
+.tm-detl-lft-img-rgt-desc-cntlr{
+	display: flex;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #f3f3f3;
+}
+.tm-detl-lft-img{
+	width: 42%;
+}
+.tm-detl-rgt-desc{
+	width: 58%;
+	padding-left: 95px;
+}
+.tm-detl-lft-img-ctlr{
+	height: 630px;
+}
+.tm-detl-lft-img img{
+	width: 100%;
+	height: 100%;
+}
+.tm-detl-lft-img-desc-ctlr{
+	background: #0084A9;
+    border-bottom-right-radius: 180.5px;
+    padding-left: 50px;
+    max-width: 425px;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    margin-top: -18px;
+}
+.tm-detl-lft-img-desc-ctlr ul li{
+	padding-bottom: 10px;
+	display: flex;
+}
+li.tm-detl-linkedin {
+    padding-top: 17px;
+}
+.tm-detl-linkedin a{
+	font-weight: 600;
+}
+.tm-detl-linkedin{
+	padding-top: 20px;
+}
+.tm-detl-lft-img-desc-ctlr ul li span{
+	width: 24px;
+	height: 24px;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tm-detl-lft-img-desc-ctlr ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 13px;
+	color: #fff;
+	padding-left: 15px;
+	text-decoration: none;
+}
+.tm-detl-lft-img-desc-ctlr ul li a:hover{
+	color: #c3bfbf;
+}
+.tm-detl-lft-btn {
+    padding-top: 40px;
+}
+.tm-detl-lft-btn .fl-ci-btn{
+	min-width: 100%;
+	padding: 15px 20px;
+} 
+.studies-ctlr a{
+	display: inline-block;
+	color: #0084A9;
+	font-weight: 600;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+.studies-ctlr a:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	height: 4px;
+	width: 85px;
+	background: #0084A9;
+	bottom: 0;
+}
+.tm-detl-rgt-desc-title{
+	margin-bottom: 10px;
+	margin-top: -6px;
+}
+.studies-ctlr{
+	padding-bottom: 38px;
+}
+.studies-ctlr ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.studies-ctlr ul li {
+    padding-bottom: 38px;
+}
+.studies-ctlr ul li:last-child{
+	padding-bottom: 0;
+}
+.studies-ctlr ul li h6 {
+    margin-bottom: 5px;
+}
+.studies-ctlr p{
+	margin-bottom: 35px;
+}
+.expertise-ctlr{
+	padding-bottom: 30px;
+}
+.expertise-ctlr span{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.expertise-title{
+	margin-bottom: 35px;
+}
+.Lang-title{
+	margin-bottom: 5px;
+}
+.areas-of-expertise-ctlr{
+	padding-bottom: 25px;
+}
+.areas-of-expertise-title,
+.Seminaries-title,
+.publicaties-title{
+	margin-bottom: 13px;
+}
+.tm-detl-rgt-desc ul{
+	padding-left: 0;
+}
+.tm-detl-rgt-desc ul li a{
+	color: #0084A9;
+}
+.areas-of-expertise-ctlr ul li{
+	color: #616268;
+}
+.Seminaries-ctlr{
+	padding-bottom: 15px;
+}
+.Seminaries-ctlr ul li:before,
+.publicaties-ctlr ul li:before{
+	background: #0084A9;
+}
+.tm-detl-text-module-sec{
+	padding-top: 75px;
+	padding-bottom: 100px;
+}
+.tm-detl-text-module-sec-inr{
+	display: flex;
+}
+.tm-detl-text-lft-ttl{
+	line-height: 1.4;
+}
+.tm-detl-text-module-lft{
+	width: 42%;
+}
+.tm-detl-text-module-rgt{
+	width: 52%;
+	padding-left: 90px;
+}
+
+.related-articles-sec{
+	padding-top: 100px;
+	padding-bottom: 55px;
+}
+.related-articles-sec .sec-entry-hdr{
+	padding-bottom: 20px;
+}
+.related-articles-sec .fl-prev-next{
+	text-align: right;
+}
+.related-articles-sec .news-grd{
+	width: 50%;
+	padding-top: 40px;
+}

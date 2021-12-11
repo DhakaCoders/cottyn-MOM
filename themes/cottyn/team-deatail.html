@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Detail</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#46C691">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!--   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
+  <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
+  <?php } ?> -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/flatpickr/flatpickr.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->  
+
+
+  <svg style="display: none;">
+    <!-- <svg class="id-name" width="16" height="16" viewBox="0 0 16 16" fill="#FF5C26">
+      <use xlink:href="#id-name"></use> </svg> -->
+      <symbol id="search-icn" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.99765 13.9978C10.8622 13.9978 13.9951 10.8649 13.9951 7.00033C13.9951 3.13572 10.8623 0.00289917 6.99765 0.00289917C3.13305 0.00289917 0.000192642 3.13575 0.000192642 7.00036C0.000192642 10.865 3.13308 13.9978 6.99765 13.9978ZM6.99765 2.00218C9.75808 2.00218 11.9958 4.23993 11.9958 7.00036C11.9958 9.76079 9.75808 11.9985 6.99765 11.9985C4.23723 11.9985 1.99948 9.76079 1.99948 7.00036C1.99948 4.23993 4.23726 2.00218 6.99765 2.00218Z" fill="#2E3044"/>
+      <path d="M14.9946 15.9971C15.2603 15.9986 15.5157 15.8943 15.7043 15.7072C16.0963 15.3184 16.0989 14.6855 15.7101 14.2935C15.7082 14.2915 15.7062 14.2896 15.7043 14.2877L11.9457 10.5291C11.5399 10.1371 10.8932 10.1483 10.5012 10.5541C10.1092 10.9598 10.1204 11.6065 10.5262 11.9985L14.2848 15.7072C14.4735 15.8943 14.7288 15.9986 14.9946 15.9971Z" fill="#2E3044"/>
+      </symbol>
+
+      <symbol id="down-arrow" width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.4211 0.71225H0.578825C0.0657524 0.71225 -0.195624 1.33181 0.172239 1.69968L5.59339 7.12087C5.81604 7.34353 6.1839 7.34353 6.40666 7.12087L11.8278 1.69968C12.1956 1.33181 11.9342 0.71225 11.4211 0.71225Z" fill="#2E3044"/>
+      </symbol>
+      <svg id="lft-arrow" width="32" height="18" viewBox="0 0 32 18" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30.079 10.0545H4.89676L9.61458 14.7724C10.9697 16.1276 8.93701 18.1602 7.58186 16.805L3.28518 12.5017L0.416925 9.62894C-0.138968 9.06973 -0.138968 8.16659 0.416925 7.60739L7.58186 0.434088C7.85445 0.153971 8.22968 -0.00320143 8.62062 4.94468e-05C9.9111 0.000211991 10.5444 1.57202 9.61458 2.46688L4.88556 7.18476H30.1532C32.1407 7.28337 31.9923 10.1535 30.079 10.0545Z" fill="#0084A9"/>
+      </svg>
+      <svg id="rgt-arrow" width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.50106 10.0545H26.6833L21.9655 14.7724C20.6103 16.1276 22.6431 18.1602 23.9982 16.805L28.2949 12.5017L31.1632 9.62894C31.719 9.06973 31.719 8.16659 31.1632 7.60739L23.9982 0.434088C23.7256 0.153971 23.3504 -0.00320143 22.9595 4.94468e-05C21.669 0.000211991 21.0357 1.57202 21.9655 2.46688L26.6945 7.18476H1.42686C-0.560597 7.28337 -0.412202 10.1535 1.50106 10.0545Z" fill="#0084A9"/>
+      </svg>
+      <symbol id="locatio-icn" width="15" height="19" viewBox="0 0 15 19" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.2359 2.20471C11.3734 1.49844 10.3648 0.992414 9.28302 0.723114C8.20121 0.453813 7.07313 0.427956 5.98012 0.647406C4.57475 0.935536 3.28182 1.62157 2.25535 2.6238C1.22888 3.62602 0.512132 4.90218 0.190494 6.30027C-0.131143 7.69835 -0.044117 9.15943 0.441207 10.5094C0.92653 11.8595 1.78969 13.0415 2.92788 13.9148C4.22737 14.8659 5.33379 16.0559 6.18798 17.421L6.77 18.3888C6.84391 18.5118 6.94838 18.6135 7.07324 18.6841C7.1981 18.7547 7.3391 18.7918 7.48255 18.7918C7.62599 18.7918 7.76699 18.7547 7.89185 18.6841C8.01671 18.6135 8.12118 18.5118 8.1951 18.3888L8.753 17.4593C9.49683 16.1517 10.511 15.0179 11.7279 14.1335C12.6821 13.477 13.4707 12.6078 14.0314 11.5944C14.5921 10.5809 14.9097 9.4511 14.959 8.29395C15.0084 7.13681 14.7881 5.98403 14.3157 4.92656C13.8433 3.8691 13.1316 2.93588 12.2368 2.20055L12.2359 2.20471ZM7.48172 11.3099C6.82394 11.3099 6.18093 11.1148 5.63401 10.7494C5.08708 10.384 4.66081 9.86454 4.40908 9.25683C4.15736 8.64912 4.0915 7.98041 4.21983 7.33527C4.34815 6.69013 4.66491 6.09753 5.13003 5.63241C5.59515 5.16729 6.18775 4.85054 6.83289 4.72221C7.47803 4.59389 8.14673 4.65975 8.75444 4.91147C9.36215 5.16319 9.88157 5.58947 10.247 6.13639C10.6125 6.68331 10.8075 7.32632 10.8075 7.9841C10.8075 8.86616 10.4571 9.71208 9.8334 10.3358C9.2097 10.9595 8.36377 11.3099 7.48172 11.3099Z" fill="#fff"/>
+      </symbol>
+      <symbol id="tell-icon" width="10" height="17" viewBox="0 0 10 17" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.65039 0.5H2.32675C1.38725 0.501065 0.625932 1.26238 0.625 2.20188V14.7982C0.625932 15.7377 1.38725 16.499 2.32675 16.5H7.65039C8.58989 16.499 9.35121 15.7377 9.35227 14.7982V2.20188C9.35121 1.26238 8.58989 0.501065 7.65039 0.5V0.5ZM4.98864 15.0455C4.58687 15.0455 4.26127 14.7199 4.26127 14.3181C4.26127 13.9165 4.58687 13.5909 4.98864 13.5909C5.39027 13.5909 5.71586 13.9165 5.71586 14.3181C5.71586 14.7199 5.39027 15.0455 4.98864 15.0455ZM6.07955 2.68182H3.89773C3.69691 2.68182 3.53405 2.51895 3.53405 2.31814C3.53405 2.11732 3.69691 1.95459 3.89773 1.95459H6.07955C6.28036 1.95459 6.44309 2.11732 6.44309 2.31814C6.44309 2.51895 6.28036 2.68182 6.07955 2.68182Z" fill="#fff"/>
+      </symbol>
+      <symbol id="mail-icn" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8.46281 10.5211C8.31169 10.6156 8.14168 10.6533 7.99056 10.6533C7.83943 10.6533 7.66942 10.6156 7.5183 10.5211L0 5.93079V12.0323C0 13.3358 1.05785 14.3936 2.36128 14.3936H13.6387C14.9421 14.3936 16 13.3358 16 12.0323V5.93079L8.46281 10.5211Z" fill="#fff"/>
+      <path d="M13.6384 2.60645H2.36091C1.24639 2.60645 0.301878 3.39983 0.0751953 4.45768L8.00908 9.29358L15.9241 4.45768C15.6974 3.39983 14.7529 2.60645 13.6384 2.60645Z" fill="#fff"/>
+      </symbol>
+      <symbol id="linkedin-icn" width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.1867 10.7944C13.1596 10.7944 12.7009 11.359 12.4442 11.7554V10.9317H10.5098C10.5349 11.4769 10.5098 16.7519 10.5098 16.7519H12.4442V13.5003C12.4442 13.3268 12.4553 13.1523 12.5075 13.0281C12.6477 12.68 12.9657 12.3199 13.5003 12.3199C14.2003 12.3199 14.4801 12.8536 14.4801 13.6366V16.7505H16.4146H16.415V13.4128C16.4141 11.6263 15.4594 10.7944 14.1867 10.7944ZM12.4427 11.7757H12.4307C12.4345 11.7689 12.4403 11.7626 12.4427 11.7558V11.7757Z" fill="#fff"/>
+      <path d="M7.50391 10.9316H9.43833V16.7518H7.50391V10.9316Z" fill="#fff"/>
+      <path d="M12 0.5C5.38323 0.5 0 5.8832 0 12.4999C0 19.1162 5.38323 24.4999 12 24.4999C18.6163 24.4999 24 19.1162 24 12.4999C24 5.8832 18.6173 0.5 12 0.5ZM18.3635 17.9276C18.3635 18.438 17.9401 18.8508 17.4166 18.8508H6.50173C5.9797 18.8508 5.55579 18.438 5.55579 17.9276V6.88569C5.55579 6.37575 5.9797 5.96247 6.50173 5.96247H17.4166C17.9396 5.96247 18.3635 6.37623 18.3635 6.88569V17.9276Z" fill="#fff"/>
+      <path d="M8.48399 8.12598C7.82274 8.12598 7.38965 8.56004 7.38965 9.13138C7.38965 9.68966 7.80969 10.1368 8.45837 10.1368H8.47094C9.14572 10.1368 9.56576 9.68966 9.56576 9.13138C9.55271 8.56052 9.1462 8.12598 8.48399 8.12598Z" fill="#fff"/>
+      </symbol>
+
+      
+
+
+  </svg>
+
+</head>
+<body>
+  <div class="page-body-cntlr">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="hdr-inner">
+              <div class="hdr-top-bar">
+                <div class="hdr-top-menu">
+                  <ul class="reset-list">
+                    <li><a href="#">Over ons</a></li>
+                    <li><a href="#">Nieuws<span>44</span></a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Vacatures<span>16</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="hdr-logo-menu">
+                <div class="hdr-logo-menu-inr">
+                  <div class="hdr-logo">
+                    <a href="#"><img src="assets/images/hdr-lgo.png"></a>
+                  </div>
+                  <div class="hdr-menu">
+                    <div class="hdr-main-menu">
+                      <nav class="main-nav">
+                        <ul class="reset-list">
+                          <li><a href="#">Vakgebieden</a></li>
+                          <li><a href="#">Ons team</a></li>
+                          <li><a href="#">Contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="hdr-search-lang">
+                      <div class="hdr-search">
+                        <a class="" href="#">
+                          <i>
+                            <svg class="search-icn" width="16" height="16" viewBox="0 0 16 16" fill="#FF5C26">
+                            <use xlink:href="#search-icn"></use></svg>
+                          </i>
+                        </a>
+                      </div>
+                      <div class="hdr-lang-cntlr">
+                        <div class="hdr-language">
+                          <div class="fl-lang reset-slect">
+                            <div class="fl-lang-cntlr">
+                              <ul class="reset-list">
+                                <li class="lang-active"><a href="#">Nl</a></li>
+                                <li><a href="#">EN</a></li>
+                                <li><a href="#">CN</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> 
+    <section class="page-bnr">
+      <div class="page-bnr-cntlr">
+        <div class="page-bnr-lft-bg">
+        </div>
+        <div class="page-bnr-lft-rgt">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="page-bnr-lft-rgt-cntlr">
+                  <div class="page-bnr-lft">
+                    <span class="page-bnr-lft-trnsprnt-bg"></span>
+                    <h1 class="fl-h1 page-bnr-title">Team</h1>
+                  </div>
+                  <div class="breadcrumb-cntlr">
+                    <ul class="reset-list">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Binnenpagina</a></li>
+                      <li><a href="#">Binnenpagina</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tm-detl-lft-img-rgt-desc-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tm-detl-lft-img-rgt-desc-cntlr">
+              <div class="tm-detl-lft-img">
+                  <div class="tm-detl-lft-img-ctlr inline-bg" style="background-image: url('assets/images/team-details-img1.jpg');">
+                  </div>
+                  <div class="tm-detl-lft-img-desc">
+                    <div class="tm-detl-lft-img-desc-ctlr">
+                      <ul class="reset-list">
+                        <li>
+                          <span>
+                            <i><svg class="locatio-icn" width="15" height="19" viewBox="0 0 15 19" fill="#fff">
+                            <use xlink:href="#locatio-icn"></use></i>
+                          </span>
+                          <a href="#">Belgium</a>
+                        </li>
+                        <li>
+                          <span>
+                            <i><svg class="tell-icon" width="10" height="17" viewBox="0 0 10 17" fill="#fff">
+                            <use xlink:href="#tell-icon"></use></i>
+                          </span>
+                          <a href="tel:+32(0)00000000">+32 ( 0 ) 0000 0000</a>
+                        </li>
+                        <li>
+                          <span>
+                            <i><svg class="mail-icn" width="16" height="17" viewBox="0 0 16 17" fill="#fff">
+                            <use xlink:href="#mail-icn"></use></i>
+                          </span>
+                          <a href="mailto:marc@cottyn.eu">marc@cottyn.eu</a>
+                        </li>
+                        <li class="tm-detl-linkedin">
+                          <span>
+                            <i><svg class="linkedin-icn" width="24" height="25" viewBox="0 0 24 25" fill="#fff">
+                            <use xlink:href="#linkedin-icn"></use></i>
+                          </span>
+                          <a href="#">View my Linkedin profile</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tm-detl-lft-btn">
+                      <a class="fl-ci-btn ci-transparent-btn" href="#">Boek uw afspraak</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="tm-detl-rgt-desc">
+                <div class="studies-ctlr">
+                  <h2 class="fl-h1 tm-detl-rgt-desc-title">Mark Cottyn</h2>
+                  <a href="">Boek een afspraak in</a>
+                  <p>Diam volutpat venenatis a ut faucibus tellus. Morbi sed adipiscing nisl, imperdiet. Egestas ut semper vestibulum suscipit. Vitae, tortor risus enim purus aliquet ut cursus sagittis. Tortor at nulla ut arcu nisl enim amet, sit etiam. Nibh eu neque diam, accumsan. Sit vitae integer congue iaculis turpis.</p>
+                  <ul class="reset-list">
+                    <li>
+                      <h6 class="fl-h6">Studies</h6>
+                      <span>Tellus mauris in ipsum facilisis.</span>
+                    </li>
+                    <li>
+                      <h6 class="fl-h6">Balie</h6>
+                      <span>Tellus mauris in ipsum facilisis.</span>
+                    </li>
+                    <li>
+                      <h6 class="fl-h6">Functieomschrijving binnen kantoor</h6>
+                      <span>Tellus mauris in ipsum facilisis.</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="expertise-ctlr">
+                  <h4 class="fl-h4 expertise-title">Expertise</h4>
+                  <h6 class="fl-h6 Lang-title">Talenkennis</h6>
+                  <span>Dutch, French, English, German</span>
+                </div>
+                <div class="areas-of-expertise-ctlr">
+                  <h6 class="fl-h6 areas-of-expertise-title">Vakgebieden</h6>
+                  <ul>
+                    <li>Publiek en Administratief Recht</li>
+                    <li>Familierecht en Familiaal Vermogensrecht Vermogensrecht </li>
+                    <li>Vreemdelingenrecht</li>
+                    <li>Handelsrech</li>
+                    <li>Geschillenbeslechting, bemiddeling en arbitrage</li>
+                  </ul>
+                </div>
+                <div class="Seminaries-ctlr">
+                  <h4 class="fl-h4 Seminaries-title">Seminaries</h4>
+                   <ul>
+                      <li><a href="#">Sagittis nisi, risus cursus sit varius id sit nunc integer. </a></li>
+                      <li><a href="#">Orci, sem mi nam et vitae id.</a></li>
+                    </ul>
+                </div>
+                <div class="publicaties-ctlr">
+                  <h4 class="fl-h4 publicaties-title">Publicaties</h4>
+                   <ul>
+                      <li><a href="#">Publiek en Administratief Recht</a></li>
+                      <li><a href="#">Familierecht en Familiaal Vermogensrecht Vermogensrecht </a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tm-detl-text-module-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tm-detl-text-module-sec-cntlr">
+              <h2 class="fl-h1 tm-detl-text-lft-ttl">
+                A egestas accumsan<br>eget laoreet amet.
+              </h2>
+              <div class="tm-detl-text-module-sec-inr">
+                <div class="tm-detl-text-module-lft">
+                  <p>
+                  Facilisi morbi ut molestie accumsan pretium porta convallis pretium rhoncus. Tempor neque id imperdiet risus, tellus facilisis ultrices fringilla netus. Consectetur integer quis nibh sapien. Leo, orci ultricies euismod nibh platea viverra aliquam non blandit. Adipiscing mi id ultricies magna libero. Nulla dolor amet eleifend ridiculus diam. Mauris adipiscing vel mauris quis vestibulum pulvinar.</p>
+                  <p>Amet felis ac lectus aliquam nascetur. Viverra enim sed dui praesent egestas id dolor eu.</p>
+                  <p>Congue odio eu pharetra fermentum convallis urna. Id pharetra volutpat lectus sit volutpat porta sed. Magna scelerisque malesuada felis sociis tellus. Purus velit ipsum orci eu feugiat aliquet. Placerat viverra tellus amet, donec lectus in eget consequat. Vitae ultricies cursus praesent pellentesque. Aliquam magna tempor turpis non. Aliquam arcu justo, luctus id elit feugiat ultrices montes. Fames vulputate sit eget feugiat feugiat hendrerit tempus pulvinar nisi. Enim nibh cum velit molestie in lacus, gravida facilisis. Semper donec convallis at ut mattis pulvinar consequat ut egestas.Nibh libero rutrum integer id morbi mus sit diam gravida quam.</p>
+                </div>
+                <div class="tm-detl-text-module-rgt">
+                  <p>Diam volutpat venenatis a ut faucibus tellus. Morbi sed adipiscing nisl, imperdiet. Egestas ut semper vestibulum suscipit. Vitae, tortor risus enim purus aliquet ut cursus sagittis. Tortor at nulla ut arcu nisl enim amet, sit etiam. Nibh eu neque diam, accumsan. Sit vitae integer congue iaculis turpis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news-sec related-articles-sec">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="news-sec-cntlr">
+            <div class="sec-entry-hdr">
+              <h2 class="fl-h3 sec-entry-hdr-title">Gerelateerde artikelen</h2>
+            </div>
+            <div class="news-grids-cntlr">
+              <div class="news-grids newsGridSlider">
+                <div class="news-grd">
+                  <div class="news-grd-cntlr">
+                    <div class="news-grd-date"><strong>22</strong>sep</div>
+                    <h3 class="fl-h6 news-grd-title">Massa, dictum quam quis mattis nunc gravida elementum donec ipsum.  </h3>
+                    <div class="news-grd-desc">
+                      <p>Senectus mattis a, mattis maecenas lobortis vitae blandit integer. Pulvinar tellus vitae 
+                      leo molestie.</p>
+                      <div class="news-grd-btn">
+                        <a class="fl-text-btn" href="#">
+                          <i>
+                            <svg class="rgt-arrow" width="32" height="18" viewBox="0 0 32 18" fill="#FF5C26">
+                            <use xlink:href="#rgt-arrow"></use></svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-grd">
+                  <div class="news-grd-cntlr">
+                    <div class="news-grd-date"><strong>22</strong>sep</div>
+                    <h3 class="fl-h6 news-grd-title">Massa, dictum quam quis mattis nunc gravida elementum donec ipsum. </h3>
+                    <div class="news-grd-desc">
+                      <p>Senectus mattis a, mattis maecenas lobortis vitae blandit integer. Pulvinar tellus vitae 
+                      leo molestie.</p>
+                      <div class="news-grd-btn">
+                        <a class="fl-text-btn" href="#">
+                          <i>
+                            <svg class="rgt-arrow" width="32" height="18" viewBox="0 0 32 18" fill="#FF5C26">
+                            <use xlink:href="#rgt-arrow"></use></svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-grd">
+                  <div class="news-grd-cntlr">
+                    <div class="news-grd-date"><strong>22</strong>sep</div>
+                    <h3 class="fl-h6 news-grd-title">Massa, dictum quam quis mattis nunc gravida elementum donec ipsum.  </h3>
+                    <div class="news-grd-desc">
+                      <p>Senectus mattis a, mattis maecenas lobortis vitae blandit integer. Pulvinar tellus vitae 
+                      leo molestie.</p>
+                      <div class="news-grd-btn">
+                        <a class="fl-text-btn" href="#">
+                          <i>
+                            <svg class="rgt-arrow" width="32" height="18" viewBox="0 0 32 18" fill="#FF5C26">
+                            <use xlink:href="#rgt-arrow"></use></svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-grd">
+                  <div class="news-grd-cntlr">
+                    <div class="news-grd-date"><strong>22</strong>sep</div>
+                    <h3 class="fl-h6 news-grd-title">Massa, dictum quam quis mattis nunc gravida elementum donec ipsum. </h3>
+                    <div class="news-grd-desc">
+                      <p>Senectus mattis a, mattis maecenas lobortis vitae blandit integer. Pulvinar tellus vitae 
+                      leo molestie.</p>
+                      <div class="news-grd-btn">
+                        <a class="fl-text-btn" href="#">
+                          <i>
+                            <svg class="rgt-arrow" width="32" height="18" viewBox="0 0 32 18" fill="#FF5C26">
+                            <use xlink:href="#rgt-arrow"></use></svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="fl-prev-next">
+                  <span class="fl-prev">
+                    <i>
+                      <svg class="lft-arrow" width="32" height="18" viewBox="0 0 32 18" fill="#FF5C26">
+                      <use xlink:href="#lft-arrow"></use></svg>
+                    </i>
+                  </span>
+                  <span class="fl-next">
+                    <i>
+                      <svg class="rgt-arrow" width="32" height="18" viewBox="0 0 32 18" fill="#FF5C26">
+                      <use xlink:href="#rgt-arrow"></use></svg>
+                    </i>
+                  </span>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-wrp">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-cntlr">
+              <div class="footer-top">
+                <div class="ftr-col ftr-col-1">
+                  <div class="ftr-logo">
+                    <a href="#"><img src="assets/images/hdr-lgo.png"></a>
+                  </div>
+                  <div class="ftr-developed-support">
+                    <span>This website is developed with<br>the support of:</span>
+                    <div class="ftr-developed-lgo">
+                      <a target="_blank" href="#"><img src="assets/images/ftr-dev-lgo.svg"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ftr-col ftr-col-2">
+                  <h6 class="fl-h6 ftr-col-title">Navigatie</h6>
+                  <div class="ftr-menu">
+                    <ul class="reset-list">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Ons Team</a></li>
+                      <li><a href="#">Nieuws</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Vacatures</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ftr-col ftr-col-3">
+                  <h6 class="fl-h6 ftr-col-title">Vakgebieden</h6>
+                  <div class="ftr-menu">
+                    <ul class="reset-list">
+                      <li><a href="#">Publiek<br>en Administratief recht</a></li>
+                      <li><a href="#">Verzekeringsrecht</a></li>
+                      <li><a href="#">Verkeersrecht</a></li>
+                      <li><a href="#">Aansprakelijkheid</a></li>
+                      <li><a href="#">Erfenisrecht</a></li>
+                      <li><a href="#">Familierecht</a></li>
+                      <li><a href="#">Vreemdelingenrecht</a></li>
+                      <li><a href="#">Bemiddeling</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ftr-col ftr-col-4">
+                  <h6 class="fl-h6 ftr-col-title">Over Ons</h6>
+                  <div class="ftr-menu">
+                    <ul class="reset-list">
+                      <li><a href="#">COTTYN Netwerk</a></li>
+                      <li><a href="#">Onze missie</a></li>
+                      <li><a href="#">Onze vissie</a></li>
+                      <li><a href="#">Dienstverlening</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ftr-col ftr-col-5">
+                  <h6 class="fl-h6 ftr-col-title">Contact</h6>
+                  <div class="ftr-contact">
+                    <i class="fas fa-envelope"></i>
+                    <a target="_blank" href="mailto:info@cottyn.eu">info@cottyn.eu</a>
+                  </div>
+                  <div class="ftr-socials">
+                    <ul class="reset-list">
+                      <li class="facebook-icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ftr-developed-support show-sm">
+                <span>This website is developed<br>with the support of:</span>
+                <div class="ftr-developed-lgo">
+                  <a target="_blank" href="#"><img src="assets/images/ftr-dev-lgo.svg"></a>
+                </div>
+              </div>
+              <div class="footer-btm">
+                <div class="ftr-copyright">
+                  <p>&copy; 2021 Cottyn. All rights reserved.</p>
+                </div>
+                <div class="ftr-btm-menu">
+                  <ul class="reset-list">
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                  </ul>
+                </div>
+                <div class="ftr-developed-by">
+                  <p>webdesign by <a href="#">conversal</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
+<script src="assets/slick.slider/slick.js"></script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/select2/select2.min.js"></script>
+<script src="assets/flatpickr/flatpickr.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

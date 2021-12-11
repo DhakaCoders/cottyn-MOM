@@ -1,14 +1,15 @@
-footer.footer-wrp{
-	padding-top: 70px;
+.footer-wrp{
+	padding-top: 74px;
 }
 .ftr-top-bdr{
 	position: relative;
+	padding-top: 84px;
 }
 .ftr-top-bdr:after{
 	position: absolute;
 	content: '';
 	height: 18px;
-	width: 90.5%;
+	width: 87%;
 	left: 0;
 	top: 0;
 	background: #F3F8FA;

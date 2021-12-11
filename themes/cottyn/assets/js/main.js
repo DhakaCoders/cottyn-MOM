@@ -117,8 +117,8 @@ Responsive on 767px
 /**
 Slick slider
 */
-if( $('.quoteItemSlider').length ){
-    $('.quoteItemSlider').slick({
+if( $('.blockqouteItemSlider').length ){
+    $('.blockqouteItemSlider').slick({
       dots: false,
       arrows: true,
       infinite: true,
@@ -127,11 +127,24 @@ if( $('.quoteItemSlider').length ){
       speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1,
-      prevArrow:$('.quote-sec .fl-prev-next .fl-prev'),
-      nextArrow:$('.quote-sec .fl-prev-next .fl-next')
+      prevArrow:$('.fl-prev-next .fl-prev'),
+      nextArrow:$('.fl-prev-next .fl-next')
     });
 }
-
+if( $('.related-articles-sec .newsGridSlider').length ){
+    $('.related-articles-sec .newsGridSlider').slick({
+      dots: false,
+      arrows: true,
+      infinite: true,
+      autoplay: false,
+      autoplaySpeed: 1000,
+      speed: 700,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      prevArrow:$('.fl-prev-next .fl-prev'),
+      nextArrow:$('.fl-prev-next .fl-next')
+    });
+}
 if( $('.expertiseGridSlider').length ){
     $('.expertiseGridSlider').slick({
       dots: false,
@@ -171,6 +184,41 @@ if( $('.expertiseGridSlider').length ){
       ]
     });
 }
+
+ $(window).scroll(function() { 
+    var scroll = $(window).scrollTop();   
+    if (scroll >= 100) {
+        $('.header-sticky').addClass('fixed-hdr');
+    } else {
+        $('.header-sticky').removeClass('fixed-hdr');
+    }  
+});
+// tab
+$('.ov-tab-btn ul li a').on('click', function(e){
+  e.preventDefault();
+  var bittab = $(this).data('to');
+  $('.ov-tab-btn ul li a').removeClass('ui-tabs-active');
+  $(this).addClass('ui-tabs-active');
+
+  $('.ov-tab-content-items .ov-tab-content-itm').removeClass('ov-tab-content-item-active');
+  $(bittab).addClass('ov-tab-content-item-active');
+});
+
+
+var scroll = $(window).scrollTop();   
+    if (scroll >= 100) {
+        $('.src-bx-hvr').addClass('hdr');
+    } else {
+        $('.src-bx-hvr').removeClass('fixddddded-hdr');
+    }
+$('.hdr-search a').click(function(){
+$('.src-bx-hvr').slideDown();  
+});
+$('.humburgur-button-main').click(function(){
+$('.src-bx-hvr').slideUp();
+});
+
+
 
 if( $('#mapID').length ){
 var latitude = $('#mapID').data('latitude');

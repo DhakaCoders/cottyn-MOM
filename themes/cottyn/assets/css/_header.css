@@ -1,6 +1,120 @@
+
+.src-bx-hvr {
+    background:  #002544;;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 111;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 130px;
+    display: none;
+}
+.src-bx-frm form{
+    position: relative;
+}
+.fl-lang-cntlr:after {
+    content: "\f0d7";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 9px;
+    font-family: "Font Awesome 5 Free";
+    transform: translateX(50%);
+    font-weight: 600;
+}
+.search-form input[data-empty="false"] + label,
+.search-form input[type='text']:focus + label{
+    top:-30px!important;
+    font-size: 30px!important;
+    color: #fff!important;
+}
+.src-bx-frm input[type="text"]:focus{
+    border-bottom: 3px solid #FFD662FF;
+}
+.src-bx-frm input[type="text"] {
+    width: 100%;
+    background: transparent;
+    padding-right: 60px;
+    border-bottom: 3px solid #fff;
+    height: 54px;
+    color:#fff;
+    font-size:20px;
+    z-index: 3;
+}
+.src-bx-frm {
+    max-width: 700px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.src-bx-frm  label{
+    color: #fff;
+    font-size: 40px;
+    top: 4px;
+    font-weight: 300;
+    position: absolute;
+    left: 0;
+    transition: all .5s;
+    margin-bottom: initial;
+}
+
+.src-bx-frm  label strong {
+    font-weight: 500;
+}
+.search-form button{
+    position: absolute;
+    display: inline-block;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    cursor: pointer;
+}
+.search-form button i{
+	font-size: 30px;
+	color: #fff;
+}
+.humburgur-button-main {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 33px;
+    width: 40px;
+    cursor: pointer;
+}
+.humburgur-button {
+    width: 33px;
+    height: 40px;
+    position: relative;
+}
+
+.humburgur-button span {
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    display: inline-block;
+    top: 14px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.humburgur-button span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.humburgur-button span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
 .header{
 	padding-top: 18px;
 	padding-bottom: 45px;
+	position: relative;
 }
 .hdr-top-bar{
 	padding-left: 180px;
@@ -135,8 +249,19 @@
 	position: relative;
 	min-width: 100px;
 	height: 42px;
+}
+.fl-lang-cntlr ul{
 	border: 2px solid #ECECEC;
-	border-radius: 21px;	
+	border-radius: 21px;
+	transition: all .5s;
+	-ms-transition: all .5s;
+	-webkit-transition: all .5s;
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 6px 10px;
+	box-shadow: 4px -3px 0px #0084a9;
+	background: #fff;
 }
 .fl-lang-cntlr:after{
 	position: absolute;
@@ -147,32 +272,19 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	right: 18px;
-	top: 50%;
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
+	top: 14px;
 	transition: all .5s;
 	-ms-transition: all .5s;
 	-webkit-transition: all .5s;
 }
 .fl-lang-cntlr:hover:after{
-	transform: rotate(180deg);
-	margin-top: -5px;
-	-ms-transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
-}
-.fl-lang-cntlr ul{
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	padding: 6px 10px;
+	transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
 }
 .fl-lang-cntlr ul li:nth-child(2){
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	margin-top: 9px;
 }
 .fl-lang-cntlr ul li:nth-child(3){
 	border-bottom-left-radius: 5px;
@@ -181,8 +293,6 @@
 .fl-lang-cntlr ul li.lang-active{
 	position: relative;
 	opacity: 1;
-	box-shadow: none;
-	background: initial;
 	padding-bottom: 0;
 	transform: scale3d(1,1,1);
 }
@@ -193,6 +303,12 @@
 	padding-bottom: 2px;
 	transform: scale3d(1,0,1);
 	transform-origin: top;
+}
+.fl-lang-cntlr:hover li{
+	opacity: 1;
+	position: relative;
+	transition: .5s;
+	transform: scale3d(1,1,1);
 }
 .fl-lang-cntlr ul li a{
 	text-decoration: none;
@@ -208,11 +324,41 @@
 .fl-lang-cntlr ul li a:hover{
 	color: #0084A9;
 }
-.fl-lang-cntlr:hover li{
-	opacity: 1;
-	position: relative;
-	box-shadow: 0px 2px 97px rgb(44 17 62 / 1%), 0px 1px 13px rgb(24 10 38 / 4%);
-	background: #fff;
+
+
+.header-sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	transition: .5s;
+	-ms-transition: .5s;
+	-webkit-transition: .5s;
+	padding: 14px 0;
+	z-index: 99;
+	box-shadow: 0px 9px 20px -12px rgb(221 218 218 / 75%);
+	-webkit-box-shadow: 0px 9px 20px -12px rgb(221 218 218 / 75%);
+	-moz-box-shadow: 0px 9px 20px -12px rgb(221 218 218 / 75%);
+	opacity: 0;
+	margin-top: -120px;
+	background: #fff;
+	z-index: 99;
+	transform: scale3d(1,0,1);
+	transform-origin: top;
+}
+.hdr-logo a img{
+	max-width: 162px;
+	width: 100%;
+}
+.header-sticky .hdr-menu{
+	padding-top: 0;
+}
+.header-sticky .hdr-logo{
+	margin-top: 0;
+}
+.fixed-hdr{
+	opacity: 1;
+	top: 0;
+	margin-top: 0;
 	transform: scale3d(1,1,1);
 }
