@@ -14,9 +14,10 @@
     height: 565px;
     width: 50%;
 }
-.hm-banner-img.inline-bg {
+.hm-banner-img{
     width: 100%;
     height: 100%;
+    border-bottom-right-radius: 286.5px;
 }
 .hm-banner-desc {
     min-height: 490px;
@@ -307,6 +308,7 @@ blockquote i{
 .These-experts-grids ul{
 	display: flex;
 	margin: 0 -10px;
+	padding: 0;
 }
 .These-experts-grids ul li{
 	padding: 0 10px 40px;
