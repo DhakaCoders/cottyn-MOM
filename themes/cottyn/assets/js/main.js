@@ -204,13 +204,6 @@ $('.ov-tab-btn ul li a').on('click', function(e){
   $(bittab).addClass('ov-tab-content-item-active');
 });
 
-
-var scroll = $(window).scrollTop();   
-    if (scroll >= 100) {
-        $('.src-bx-hvr').addClass('hdr');
-    } else {
-        $('.src-bx-hvr').removeClass('fixddddded-hdr');
-    }
 $('.hdr-search a').click(function(){
 $('.src-bx-hvr').slideDown();  
 });
@@ -218,7 +211,15 @@ $('.humburgur-button-main').click(function(){
 $('.src-bx-hvr').slideUp();
 });
 
-
+// accordion
+if( $('.faq-accordion-inr').length ){
+  $('.faq-accordion-hdr').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).parents('.faq-accordion-inr .faq-accordion').siblings().find('.faq-accordion-hdr').removeClass('active');
+    $(this).parents('.faq-accordion-inr .faq-accordion').find('.faq-accordion-desc').slideToggle(300);
+    $(this).parents('.faq-accordion-inr .faq-accordion').siblings().find('.faq-accordion-desc').slideUp(300);
+  });
+}
 
 if( $('#mapID').length ){
 var latitude = $('#mapID').data('latitude');

@@ -1,7 +1,25 @@
 .footer-wrp{
-	padding-top: 74px;
+	position: relative;
 }
-.ftr-top-bdr{
+.footer-wrp .footer-cntlr{
+	padding-top: 74px;
+	position: relative;
+}
+.footer-cntlr {
+    padding-top: 74px;
+    position: relative;
+}
+.footer-cntlr:after{
+	position: absolute;
+	content: '';
+	height: 18px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: #F3F8FA;
+	border-bottom-right-radius: 12px;
+}
+.ftr-top-bdr .footer-cntlr{
 	position: relative;
 	padding-top: 84px;
 }
@@ -9,7 +27,7 @@
 	position: absolute;
 	content: '';
 	height: 18px;
-	width: 87%;
+	width: 50%;
 	left: 0;
 	top: 0;
 	background: #F3F8FA;
