@@ -1,0 +1,113 @@
+.Vakgebiden-details-con{
+	padding-top: 15px;
+	padding-bottom: 80px;
+}
+.vacature-accordion-desc-inr .full-img{
+	padding-bottom: 40px;
+}
+.vacature-accordion-desc-inr .full-img img{
+	border-radius: 20px;
+}
+.Vakgebiden-details-con-cntlr{
+	display: flex;
+}
+.vacature-details-con-lft{
+	width: 28%;
+}
+.vacature-details-con-lft-inr{
+	background: #F3F8FA;
+	padding-top: 41px;
+	padding-right: 24px;
+	padding-bottom: 50px;
+	padding-left: 24px;
+}
+.vacature-details-con-lft-inr ul{
+	
+}
+.vacature-details-con-lft-inr ul li{
+	margin-bottom: 16px;
+	padding-left: 23px;
+	position: relative;
+}
+.vacature-details-con-lft-inr ul li:after{
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 2px;
+	left: 0;
+	top: 50%;
+	transform: translateY(50%);
+	background: #0084A9;
+	margin-top: -2px;
+	opacity: 0;
+}
+.vacature-details-con-lft-inr ul li.active a{
+	font-weight: 600;
+}
+.vacature-details-con-lft-inr ul li.active:after{
+	opacity: 1;
+}
+.vacature-details-con-lft-inr ul li a{
+	display: inline-block;
+	position: relative;
+	font-size: 15px;
+	text-decoration: none;
+	color: #2E3044;
+	line-height: 1.142;
+}
+.vacature-details-con-lft-inr ul li a:hover{
+	font-weight: 600;
+}
+.vacature-details-con-rgt{
+	width: 72%;
+	padding-left: 90px;
+}
+.vacature-accordion{
+	background: #F3F8FA;
+	padding: 49px 40px 5px;
+	margin-bottom: 35px;
+}
+.vacature-accordion-hdr{
+	margin-bottom: 35px;
+	cursor: pointer;
+}
+.vacature-sub-accordion-hdr{
+	margin-bottom: 22px;
+	cursor: pointer;
+}
+.vacature-accordion-hdr.active .vacature-accordion-title:after,
+.vacature-sub-accordion-hdr.active .vacature-sub-accordion-title:after{
+	background-image: url(../images/ctn-faq-minus-icn.png);
+}
+.vacature-accordion-desc,
+.vacature-sub-accordion-desc{
+	display: none;
+}
+.vacature-accordion-title,
+.vacature-sub-accordion-title{
+	margin-bottom: 0;
+	position: relative;
+	padding-right: 50px;
+}
+.vacature-accordion-title:after,
+.vacature-sub-accordion-title:after{
+	content: '';
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    top: 50%;
+    right: 0;
+    background-image: url(../images/ctn-faq-plus-icn.png);
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vacature-sub-accordion-title:after{
+	width: 24px;
+	height: 24px;
+}
+.vacature-sub-accordion-desc{
+	padding-bottom: 22px;
+}

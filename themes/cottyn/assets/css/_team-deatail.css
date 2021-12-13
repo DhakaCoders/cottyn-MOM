@@ -144,23 +144,6 @@ li.tm-detl-linkedin {
 .publicaties-ctlr ul li:before{
 	background: #0084A9;
 }
-.tm-detl-text-module-sec{
-	padding-top: 75px;
-	padding-bottom: 100px;
-}
-.tm-detl-text-module-sec-inr{
-	display: flex;
-}
-.tm-detl-text-lft-ttl{
-	line-height: 1.4;
-}
-.tm-detl-text-module-lft{
-	width: 42%;
-}
-.tm-detl-text-module-rgt{
-	width: 52%;
-	padding-left: 90px;
-}
 
 .related-articles-sec{
 	padding-top: 100px;

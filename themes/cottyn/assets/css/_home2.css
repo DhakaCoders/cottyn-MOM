@@ -48,30 +48,35 @@
 .hm-banner-desc-btn .fl-ci-btn{
 	margin-right: 15px;
 }
-.our-care-lft-ttl-rgt-desc{
-	padding: 100px 0;
+
+
+.ctn-tex-module-sec{
+	padding-bottom: 58px;
 }
-.our-care-lft-ttl-rgt-desc p:last-of-type{
-	margin-bottom: 0;
+.ctn-tex-module-sec-cntlr .sec-entry-hdr{
+	max-width: initial;
 }
-.our-care-lft-ttl-rgt-desc-inr{
+.ctn-tex-module-sec-inr{
 	display: flex;
 }
-.our-care-lft-ttl{
-	width: 52%;
-	padding-right: 20px;
+.ctn-tex-module-lft-ttl{
+	width: 44%;
 }
-.our-care-lft-title{
+.ctn-tex-module-lft-title span{
+	color: #0084A9;
+}
+.ctn-tex-module-lft-title{
 	line-height: 1.4;
 }
-.our-care-rgt-desc{
-	width: 48%;
-	padding-left: 20px;
+.ctn-tex-module-rgt-con{
+	width: 56%;
+	padding-left: 90px;
 }
-.our-care-lft-title strong{
-	font-weight: 600;
-	color: #0084aa;
+.ctn-tex-module-lft-ttl p:last-of-type,
+.ctn-tex-module-rgt-con p:last-of-type{
+	margin-bottom: 0;
 }
+
 
 .cta-module-desc{
 	background: #0084aa;
