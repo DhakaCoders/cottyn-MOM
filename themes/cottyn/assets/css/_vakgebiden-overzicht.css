@@ -7,9 +7,6 @@
 .expertise-ovrvw-con-cntlr .page-bnr{
 	padding-bottom: 70px;
 }
-.expertise-ovrvw-con-cntlr .page-entry-hdr{
-	margin-bottom: 30px;
-}
 
 
 .expertise-ovrvw-search-ctlr{
@@ -24,19 +21,29 @@
 .expertise-ovrvw-search-ctlr label{
     display: inline-block;
     vertical-align: baseline;
-    margin-bottom: 0px;
+    margin-bottom: 13px;
+    line-height: 1;
 }
 .expertise-ovrvw-search-ctlr form input[type="search"]{
 	width: 100%;
 	height: 56px;
 	border: 1px solid #D7E4E9;
 	padding: 15px 70px 15px 21px;
-	color: #A1A1A3;
+	color: #2E3044;
 	text-transform: capitalize;
 	font-size: 14px;
 	position: relative;
 }
 .expertise-ovrvw-search-ctlr form input[type="search"]::placeholder{
+	color: #A1A1A3;
+}
+.expertise-ovrvw-search-ctlr form input[type="search"]::-ms-placeholder{
+	color: #A1A1A3;
+}
+.expertise-ovrvw-search-ctlr form input[type="search"]::-webkit-placeholder{
+	color: #A1A1A3;
+}
+.expertise-ovrvw-search-ctlr form input[type="search"]::-moz-placeholder{
 	color: #A1A1A3;
 }
 .expertise-ovrvw-search-ctlr form input[type="search"]:focus{

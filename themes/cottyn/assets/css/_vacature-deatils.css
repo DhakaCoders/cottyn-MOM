@@ -1,0 +1,48 @@
+#vacature-details .dfp-promo-module-title{
+	margin-bottom: 10px;
+}
+#vacature-details .dfp-time-module{
+	padding-bottom: 20px;
+}
+#vacature-details .dfp-social-media-select-module{
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #F3F8FA;
+	padding: 20px 0;
+}
+#vacature-details .dfp-social-media-ctlr{
+	padding: 0;
+	display: block;
+	margin: 0;
+	border: none;
+}
+#vacature-details .vacature-details-rgt-btn-ctlr{
+	margin-left: auto;
+}
+.vacature-details-rgt-btn-ctlr .fl-ci-btn{
+	min-width: 270px;
+}
+.vacature-details-con-cntlr .vacature-details-lft{
+	width: 74%;
+	padding-right: 90px;
+}
+.vacature-details-con-cntlr .vacature-details-con-rgt{
+	width: 26%;
+	padding-left: 0;
+}
+.vacature-details-con-rgt-inr{
+	padding-left: 40px;
+}
+.vacature-details-con-rgt-inr ul li:after{
+	content: none;
+}
+.vacature-details-con-rgt-inr ul li{
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.vacature-details-con-rgt-inr ul{
+	padding-left: 0;
+	padding-bottom: 25px;
+}
+
+/*wp-form*/

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vacature Detail</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#46C691">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!--   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
+  <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
+  <?php } ?> -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/flatpickr/flatpickr.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->  
+
+
+  <svg style="display: none;">
+    <!-- <svg class="id-name" width="16" height="16" viewBox="0 0 16 16" fill="#FF5C26">
+      <use xlink:href="#id-name"></use> </svg> -->
+      <symbol id="search-icn" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.99765 13.9978C10.8622 13.9978 13.9951 10.8649 13.9951 7.00033C13.9951 3.13572 10.8623 0.00289917 6.99765 0.00289917C3.13305 0.00289917 0.000192642 3.13575 0.000192642 7.00036C0.000192642 10.865 3.13308 13.9978 6.99765 13.9978ZM6.99765 2.00218C9.75808 2.00218 11.9958 4.23993 11.9958 7.00036C11.9958 9.76079 9.75808 11.9985 6.99765 11.9985C4.23723 11.9985 1.99948 9.76079 1.99948 7.00036C1.99948 4.23993 4.23726 2.00218 6.99765 2.00218Z" fill="#2E3044"/>
+      <path d="M14.9946 15.9971C15.2603 15.9986 15.5157 15.8943 15.7043 15.7072C16.0963 15.3184 16.0989 14.6855 15.7101 14.2935C15.7082 14.2915 15.7062 14.2896 15.7043 14.2877L11.9457 10.5291C11.5399 10.1371 10.8932 10.1483 10.5012 10.5541C10.1092 10.9598 10.1204 11.6065 10.5262 11.9985L14.2848 15.7072C14.4735 15.8943 14.7288 15.9986 14.9946 15.9971Z" fill="#2E3044"/>
+      </symbol>
+
+      <symbol id="down-arrow" width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.4211 0.71225H0.578825C0.0657524 0.71225 -0.195624 1.33181 0.172239 1.69968L5.59339 7.12087C5.81604 7.34353 6.1839 7.34353 6.40666 7.12087L11.8278 1.69968C12.1956 1.33181 11.9342 0.71225 11.4211 0.71225Z" fill="#2E3044"/>
+      </symbol>
+      <svg id="lft-arrow" width="32" height="18" viewBox="0 0 32 18" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30.079 10.0545H4.89676L9.61458 14.7724C10.9697 16.1276 8.93701 18.1602 7.58186 16.805L3.28518 12.5017L0.416925 9.62894C-0.138968 9.06973 -0.138968 8.16659 0.416925 7.60739L7.58186 0.434088C7.85445 0.153971 8.22968 -0.00320143 8.62062 4.94468e-05C9.9111 0.000211991 10.5444 1.57202 9.61458 2.46688L4.88556 7.18476H30.1532C32.1407 7.28337 31.9923 10.1535 30.079 10.0545Z" fill="#0084A9"/>
+      </svg>
+      <svg id="rgt-arrow" width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.50106 10.0545H26.6833L21.9655 14.7724C20.6103 16.1276 22.6431 18.1602 23.9982 16.805L28.2949 12.5017L31.1632 9.62894C31.719 9.06973 31.719 8.16659 31.1632 7.60739L23.9982 0.434088C23.7256 0.153971 23.3504 -0.00320143 22.9595 4.94468e-05C21.669 0.000211991 21.0357 1.57202 21.9655 2.46688L26.6945 7.18476H1.42686C-0.560597 7.28337 -0.412202 10.1535 1.50106 10.0545Z" fill="#0084A9"/>
+      </svg>
+      <symbol id="play-button-icn" width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+      <path d="M53.1947 38.4354L36.5829 26.36C35.9733 25.9181 35.164 25.8515 34.4958 26.1949C33.8223 26.5357 33.4017 27.2278 33.4017 27.9759V52.1189C33.4017 52.8749 33.8223 53.5644 34.4958 53.9052C34.7807 54.0489 35.0921 54.1208 35.4063 54.1208C35.8162 54.1208 36.2315 53.9903 36.5829 53.7321L53.1947 41.6673C53.7191 41.2813 54.0253 40.685 54.0253 40.0514C54.0279 39.4071 53.7138 38.8135 53.1947 38.4354Z"/>
+      <path d="M40.0013 0.00537109C17.9056 0.00537109 0 17.9109 0 40.0067C0 62.0945 17.9056 79.9947 40.0013 79.9947C62.0918 79.9947 80 62.0918 80 40.0067C80.0027 17.9109 62.0918 0.00537109 40.0013 0.00537109ZM40.0013 73.3207C21.6006 73.3207 6.68197 58.4101 6.68197 40.0067C6.68197 21.6113 21.6006 6.68202 40.0013 6.68202C58.3994 6.68202 73.3154 21.6086 73.3154 40.0067C73.318 58.4101 58.3994 73.3207 40.0013 73.3207Z"/>
+      </symbol>
+      <symbol id="attach-file-icn" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.4152 3.6301C19.5944 2.53109 18.3801 1.79235 17.0268 1.56866C15.6735 1.34497 14.2861 1.65367 13.1552 2.4301L4.72525 8.1976C3.09317 9.29957 1.9657 11.0048 1.59086 12.938C1.21602 14.8713 1.62452 16.8743 2.7265 18.5063C3.82847 20.1384 5.53365 21.2659 7.46692 21.6407C9.40018 22.0156 11.4032 21.6071 13.0352 20.5051L18.5252 16.8451C18.6913 16.7347 18.8068 16.5628 18.8462 16.3673C18.8855 16.1718 18.8456 15.9687 18.7352 15.8026C18.6248 15.6365 18.453 15.5211 18.2575 15.4817C18.062 15.4423 17.8588 15.4822 17.6927 15.5926L12.2027 19.2526C10.9005 20.0869 9.32365 20.3789 7.809 20.0663C6.29436 19.7537 4.96197 18.8612 4.09642 17.5795C3.23088 16.2979 2.90077 14.7286 3.17662 13.2068C3.45247 11.685 4.3124 10.3314 5.57275 9.4351L14.0027 3.6676C14.4174 3.37042 14.8873 3.15935 15.3849 3.04686C15.8824 2.93436 16.3975 2.92273 16.8996 3.01264C17.4017 3.10255 17.8807 3.29218 18.3083 3.57032C18.7359 3.84847 19.1034 4.2095 19.3892 4.63207C19.6749 5.05465 19.873 5.5302 19.9719 6.03064C20.0707 6.53108 20.0683 7.04626 19.9647 7.54573C19.8611 8.04521 19.6584 8.51885 19.3687 8.93869C19.0789 9.35852 18.708 9.71603 18.2777 9.9901L10.2977 15.3076C10.1315 15.4513 9.93651 15.5579 9.72579 15.6203C9.51507 15.6827 9.29346 15.6994 9.07576 15.6693C8.85807 15.6392 8.6493 15.5631 8.46339 15.4459C8.27748 15.3287 8.11871 15.1732 7.99767 14.9898C7.87664 14.8063 7.79613 14.5992 7.76153 14.3822C7.72692 14.1652 7.73901 13.9432 7.79699 13.7313C7.85496 13.5193 7.9575 13.3221 8.09774 13.1529C8.23798 12.9837 8.4127 12.8464 8.61025 12.7501L13.0352 9.4951C13.117 9.4365 13.1864 9.36237 13.2395 9.27694C13.2926 9.19152 13.3284 9.09647 13.3447 8.99723C13.3611 8.89798 13.3577 8.79649 13.3349 8.69854C13.312 8.60059 13.2701 8.5081 13.2115 8.42635C13.1529 8.3446 13.0788 8.2752 12.9933 8.2221C12.9079 8.169 12.8129 8.13324 12.7136 8.11688C12.6144 8.10051 12.5129 8.10385 12.4149 8.12671C12.317 8.14957 12.2245 8.1915 12.1427 8.2501L7.75525 11.4826C7.41067 11.7128 7.11657 12.0107 6.89087 12.3582C6.66516 12.7057 6.51257 13.0956 6.4424 13.504C6.37223 13.9124 6.38594 14.3308 6.48271 14.7337C6.57947 15.1366 6.75727 15.5156 7.00525 15.8476C7.47361 16.4685 8.1613 16.8872 8.92792 17.0182C9.69454 17.1492 10.4823 16.9827 11.1302 16.5526L19.1102 11.2501C19.7119 10.8483 20.2253 10.3281 20.6192 9.72132C21.0131 9.11452 21.2793 8.43381 21.4014 7.72073C21.5235 7.00766 21.4991 6.27718 21.3295 5.57388C21.16 4.87057 20.8489 4.20919 20.4152 3.6301Z"/>
+      </symbol>
+
+      
+
+
+  </svg>
+
+</head>
+<body class="vg">
+  <div class="page-body-cntlr">
+    <header class="header">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="hdr-inner">
+            <div class="hdr-top-bar">
+              <div class="hdr-top-menu">
+                <ul class="reset-list">
+                  <li><a href="#">Over ons</a></li>
+                  <li><a href="#">Nieuws<span>44</span></a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Vacatures<span>16</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="hdr-logo-menu">
+              <div class="hdr-logo-menu-inr">
+                <div class="hdr-logo">
+                  <a href="#"><img src="assets/images/hdr-lgo.png"></a>
+                </div>
+                <div class="hdr-menu">
+                  <div class="hdr-main-menu">
+                    <nav class="main-nav">
+                      <ul class="reset-list">
+                        <li><a href="#">Vakgebieden</a></li>
+                        <li><a href="#">Ons team</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="hdr-search-lang">
+                    <div class="hdr-search">
+                      <a class="" href="#">
+                        <i>
+                          <svg class="search-icn" width="16" height="16" viewBox="0 0 16 16" fill="#FF5C26">
+                          <use xlink:href="#search-icn"></use></svg>
+                        </i>
+                      </a>
+                    </div>
+                    <div class="hdr-lang-cntlr">
+                      <div class="hdr-language">
+                        <div class="fl-lang reset-slect">
+                          <div class="fl-lang-cntlr">
+                            <ul class="reset-list">
+                              <li class="lang-active"><a href="#">Nl</a></li>
+                              <li><a href="#">EN</a></li>
+                              <li><a href="#">CN</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </header> 
+    <section class="page-bnr">
+      <div class="page-bnr-cntlr">
+        <div class="page-bnr-lft-bg">
+        </div>
+        <div class="page-bnr-lft-rgt">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="page-bnr-lft-rgt-cntlr">
+                  <div class="page-bnr-lft">
+                    <span class="page-bnr-lft-trnsprnt-bg"></span>
+                    <h1 class="fl-h1 page-bnr-title">Vacature</h1>
+                  </div>
+                  <div class="breadcrumb-cntlr">
+                    <ul class="reset-list">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Binnenpagina</a></li>
+                      <li><a href="#">Binnenpagina</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+                  
+    <section class="vacature-details-con">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="vacature-details-con-cntlr Vakgebiden-details-con-cntlr">
+              <div class="vacature-details-lft">
+                <article class="default-page-con" id="vacature-details">
+                  <div class="block">
+                    <div class="dfp-promo-module">
+                      <div class="dfp-promo-module-des">
+                        <div class="dfp-promo-module-des-ctlr">
+                          <div class="dfp-promo-module-des">
+                            <strong class="dfp-promo-module-title fl-h1">Vacature Titel</strong>
+                          </div>
+                          <div class="dfp-time-module">
+                            <span class="part-time">Part Time - Belgium</span>
+                          </div>
+                          <div class="dfp-social-media-select-module">
+                            <div class="dfp-social-media-ctlr">
+                              <div class="dfp-social-media-inr">
+                                <span>Delen op:</span>
+                                <ul class="reset-list">
+                                  <li>
+                                    <a href="#">
+                                      <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i class="fab fa-linkedin"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="vacature-details-rgt-btn-ctlr" data-to="">
+                              <a class="vacature-detail-btn fl-ci-btn" href="#">Solliciteren?</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dfp-plate-one-img-bx">
+                        <img src="assets/images/disciplines-details-img1.jpg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block">
+                    <div class="dfp-text-module">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                              <h3 class="fl-h3">Jobomschrijving</h3>
+                              <p>Diam volutpat venenatis a ut faucibus tellus. Morbi sed adipiscing nisl, imperdiet. Egestas ut semper vestibulum suscipit. Vitae, tortor risus enim purus aliquet ut cursus sagittis. Tortor at nulla ut arcu nisl enim amet, sit etiam. Nibh eu neque diam, accumsan. Sit vitae integer congue iaculis turpis.</p>
+                              <ul>
+                                <li>Sagittis nisi, risus cursus sit varius id sit nunc integer.</li>
+                                <li>Orci, sem mi nam et vitae id.</li>
+                                <li>Purus id a pulvinar enim donec.</li>
+                                <li>Et a semper vel maecenas facilisis bibendum massa.</li>
+                              </ul>
+                              <p>Sagittis nisi, risus cursus sit varius id sit nunc integer. Orci, sem mi nam et vitae id. Purus id a pulvinar enim donec. <strong>Pellentesque blandit mi suspendisse</strong> vulputate eu. Et a semper vel maecenas facilisis bibendum massa. Sit massa ac et, nisi, tortor neque. Sagittis, neque et nulla velit nullam diam. Adipiscing porttitor tellus, nibh blandit eu feugiat feugiat in lorem.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block">
+                    <div class="dfp-text-module">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                              <h3 class="fl-h3">Wat we van jou verwachten</h3>
+                              <p>Diam volutpat venenatis a ut faucibus tellus. Morbi sed adipiscing nisl, imperdiet. Egestas ut semper vestibulum suscipit. Vitae, tortor risus enim purus aliquet ut cursus sagittis. Tortor at nulla ut arcu nisl enim amet, sit etiam. Nibh eu neque diam, accumsan. Sit vitae integer congue iaculis turpis.</p>
+                              <ul>
+                                <li>Sagittis nisi, risus cursus sit varius id sit nunc integer.</li>
+                                <li>Orci, sem mi nam et vitae id.</li>
+                                <li>Purus id a pulvinar enim donec.</li>
+                                <li>Et a semper vel maecenas facilisis bibendum massa.</li>
+                              </ul>
+                              <p>Sagittis nisi, risus cursus sit varius id sit nunc integer. Orci, sem mi nam et vitae id. Purus id a pulvinar enim donec. <strong>Pellentesque blandit mi suspendisse</strong> vulputate eu. Et a semper vel maecenas facilisis bibendum massa. Sit massa ac et, nisi, tortor neque. Sagittis, neque et nulla velit nullam diam. Adipiscing porttitor tellus, nibh blandit eu feugiat feugiat in lorem.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block">
+                    <div class="dfp-gallery-module">
+                      <div class="gallery-wrap has-inline-bg clearfix">
+                        <div class="gallery gallerySlider">
+                          <figure class="gallery-item">
+                            <div class="gallery-icon portrait">
+                              <div class="gallery-icon-innr">
+                                <div class="gallery-icon-img inline-bg" style="background: url('assets/images/over-ons-img-2.jpg');">
+                                  <img src="assets/images/dfp-img-02.jpg">
+                                </div>
+                              </div>
+                            </div>
+                          </figure>
+                          <figure class="gallery-item">
+                            <div class="gallery-icon portrait">
+                              <div class="gallery-icon-innr">
+                                <div class="gallery-icon-img inline-bg" style="background: url('assets/images/inr-page-grd-img2.jpg.jpg');">
+                                  <img src="assets/images/inr-page-grd-img2.jpg.jpg">
+                                </div>
+                              </div>
+                            </div>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block">
+                    <div class="dfp-text-module">
+                      <div class="gap-20"></div>
+                      <h3 class="fl-h3">Wie zijn wij</h3>
+                        <p>Diam volutpat venenatis a ut faucibus tellus. Morbi sed adipiscing nisl, imperdiet. Egestas ut semper vestibulum suscipit. Vitae, tortor risus enim purus aliquet ut cursus sagittis. Tortor at nulla ut arcu nisl enim amet, sit etiam. Nibh eu neque diam, accumsan. Sit vitae integer congue iaculis turpis.</p>
+                    </div>
+                  </div>
+                  <div class="block">
+                    <div class="dfp-full-img-module">
+                      <div class="full-img">
+                        <img src="assets/images/vacature-details-img1.jpg" alt="">
+                      </div>
+                      <div class="gap-30"></div>
+                    </div>
+                  </div>
+                  <div class="block">
+                    <div class="dfp-text-module">
+                        <p>Sagittis nisi, risus cursus sit varius id sit nunc integer. Orci, sem mi nam et vitae id. Purus id a pulvinar enim donec. <strong>Pellentesque blandit mi suspendisse</strong> vulputate eu. Et a semper vel maecenas facilisis bibendum massa. Sit massa ac et, nisi, tortor neque. Sagittis, neque et nulla velit nullam diam. Adipiscing porttitor tellus, nibh blandit eu feugiat feugiat in lorem.</p>
+                        <ul>
+                          <li>Sagittis nisi, risus cursus sit varius id sit nunc integer.</li>
+                          <li>Orci, sem mi nam et vitae id.</li>
+                          <li>Purus id a pulvinar enim donec.</li>
+                          <li>Et a semper vel maecenas facilisis bibendum massa.</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="block" id="dfp-form-module">
+                    <div class="dfp-form-module">
+                      <div class="vatur-details-con-cntlr">
+                        <div class="sec-entry-hdr-des-cntlr text-white">
+                          <div class="sec-entry-hdr dfp-sec-entry-hdr-bdr-xs">
+                            <h2 class="fl-h2 sec-entry-hdr-title text-white">Solliciteren?</h2>
+                            <p>Scelerisque mollis varius non morbi vulputate non. Tortor egestas volutpat faucibus gravida malesuada tincidunt. <strong>Habitant et nibh facilisis morbi.</strong></p>
+                          </div>
+                        </div>
+                        <div class="vatur-details-form-cntlr">
+                          <div class="contact-form-wrp clearfix">
+                            <div class="wpforms-container">
+                              <form class="wpforms-form needs-validation" novalidate>
+                                <div class="wpforms-field-container text-white">
+                                  <div class="wpforms-field wpforms-field-check">
+                                    <h4 class="fl-h4 wpforms-field-checkbox-title text-white">Plaats tewerkstelling</h4>
+                                    <ul class="reset-list">
+                                      <li>
+                                        <input type="checkbox" value="Voetbal" name="check" id="wpforms-99-field_5_1" required="">
+                                        <label class="wpforms-field-label-inline" for="wpforms-99-field_5_1">Belgie - Aalst</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" value="Basketball" name="check" id="wpforms-99-field_5_2" required="">
+                                        <label class="wpforms-field-label-inline" for="wpforms-99-field_5_2">Oekraine - Kiev</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" value="Volleyball" name="check" id="wpforms-99-field_5_3" required="">
+                                        <label class="wpforms-field-label-inline" for="wpforms-99-field_5_3">Polen - Warschau</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" value="Hockey" name="check" id="wpforms-99-field_5_4" required="">
+                                        <label class="wpforms-field-label-inline" for="wpforms-99-field_5_4">Hongarije - Boedapest</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" value="Rugby" name="check" id="wpforms-99-field_5_5" required="">
+                                        <label class="wpforms-field-label-inline" for="wpforms-99-field_5_5">Slowakije - Bratislava</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" value="Voetbal" name="check" id="wpforms-99-field_5_6" required="">
+                                        <label class="wpforms-field-label-inline" for="wpforms-99-field_5_6">Roemenie - Boekarest</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" value="Basketball" name="check" id="wpforms-99-field_5_7" required="">
+                                        <label class="wpforms-field-label-inline" for="wpforms-99-field_5_7">Tsjechie - Praag</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" value="Volleyball" name="check" id="wpforms-99-field_5_8" required="">
+                                        <label class="wpforms-field-label-inline" for="wpforms-99-field_5_8">Nederland - Blaricum</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" value="Hockey" name="check" id="wpforms-99-field_5_9" required="">
+                                        <label class="wpforms-field-label-inline" for="wpforms-99-field_5_9">Oostenrijk - Wenen</label>
+                                      </li>
+                                      <li>
+                                        <input type="checkbox" value="Rugby" name="check" id="wpforms-99-field_5_10" required="">
+                                        <label class="wpforms-field-label-inline" for="wpforms-99-field_5_10">Frankrijk - Parijs</label>
+                                      </li>
+                                    </ul>
+                                  </div>  
+                                  <div class="wpforms-field">
+                                    <h4 class="fl-h4 wp-form-title">Functie</h4>
+                                  </div>  
+                                  <div class="wpforms-field wpforms-select-ctlr">
+                                    <div class="vacature-details-select">
+                                      <label>Selecteer</label>
+                                      <div class="ctn-select-inr ctn-select-down-icn">
+                                        <select class="ctn-custom-select select2-ctlr">
+                                          <option>Meerkeuzelijst</option>
+                                          <option>Meerkeuzelijst02</option>
+                                          <option>Meerkeuzelijst03</option>
+                                          <option>Meerkeuzelijst04</option>
+                                          <option>Meerkeuzelijst05</option>
+                                          <option>Meerkeuzelijst06</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="wpforms-field">
+                                    <div class="vacature-details-select">
+                                      <label>Selecteer</label>
+                                      <div class="ctn-select-inr ctn-select-down-icn">
+                                        <select class="ctn-custom-select select2-ctlr">
+                                          <option>Categorie</option>
+                                          <option>Categorie02</option>
+                                          <option>Categorie03</option>
+                                          <option>Categorie04</option>
+                                          <option>Categorie05</option>
+                                          <option>Categorie06</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="wpforms-field">
+                                    <h4 class="fl-h4 wp-form-title">Persoonlijke gegevens</h4>
+                                  </div>
+                                  <div class="wpforms-field XsNameField HalfWidthField">
+                                    <label class="wpforms-field-label">Voornaam<span>*</span></label>
+                                    <input type="text" name="name" placeholder="Voornaam" required>
+                                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Controleer dit veld</label>
+                                  </div>
+                                  <div class="wpforms-field NameField HalfWidthField">
+                                    <label class="wpforms-field-label">Naam<span>*</span></label>
+                                    <input type="text" name="name" placeholder="Naam" required>
+                                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Controleer dit veld</label>
+                                  </div>                                    
+                                  <div class="wpforms-field HalfWidthField">
+                                    <label class="wpforms-field-label">E-mailadres<span>*</span></label>
+                                    <input type="email" name="email" placeholder="Voornaam" required>
+                                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Controleer dit veld</label>
+                                  </div>
+                                  <div class="wpforms-field HalfWidthField">
+                                    <label class="wpforms-field-label">Telefoonnummer<span>*</span></label>
+                                    <input type="text" name="text" placeholder="Naam" required>
+                                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Controleer dit veld</label>
+                                  </div>  
+                                  <div class="wpforms-field">
+                                    <h4 class="fl-h4 wp-form-title">Bijlagen</h4>
+                                     <p>Wiz accepteren enkel PDF. JPEG of PNG beste</p>
+                                  </div>                                      
+                                  <div class="wpforms-field wpforms-field-file-upload bdr-dash">   
+                                    <label class="wpforms-field-label">Curriculam Vitae</label>
+                                    <div class="wpforms-uploader">
+                                      <div class="dz-message">
+                                        <i>
+                                          <svg class="attach-file-icn" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                                          <use xlink:href="#attach-file-icn"></use>
+                                        </i>
+                                        <span class="upload-title">Bestand toevoegan</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="wpforms-field FullWidthField wpforms-field-file-upload bdr-dash">   
+                                    <label class="wpforms-field-label">Motivatiebrief</label>
+                                    <div class="wpforms-uploader">
+                                      <div class="dz-message">
+                                        <i>
+                                          <svg class="attach-file-icn" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                                          <use xlink:href="#attach-file-icn"></use>
+                                        </i>
+                                        <span class="upload-title">Bestand toevoegan</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="wpforms-field FullWidthField wpforms-field-file-upload bdr-dash">   
+                                    <label class="wpforms-field-label">Diploma</label>
+                                    <div class="wpforms-uploader">
+                                      <div class="dz-message">
+                                        <i>
+                                          <svg class="attach-file-icn" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                                          <use xlink:href="#attach-file-icn"></use>
+                                        </i>
+                                        <span class="upload-title">Bestand toevoegan</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="wpforms-field FullWidthField wpforms-field-file-upload bdr-dash">   
+                                    <label class="wpforms-field-label">Profielfoto</label>
+                                    <div class="wpforms-uploader">
+                                      <div class="dz-message">
+                                        <i>
+                                          <svg class="attach-file-icn" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                                          <use xlink:href="#attach-file-icn"></use>
+                                        </i>
+                                        <span class="upload-title">Bestand toevoegan</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="wpforms-field">
+                                    <h4 class="fl-h4 wp-form-title">Bijcomende vragen</h4>
+                                    <p>Waarm wil je bij COTTYN tewerkgesteld worden?</p>
+                                  </div>
+                                  <div class="wpforms-field">
+                                    <input type="text" name="name" placeholder="Lorem Ipsum" required>
+                                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Controleer dit veld</label>
+                                  </div>
+                                  <div class="wpforms-field">
+                                    <p>Met welke troef kan jij ons team versterken? Omschrijf kort waarom.</p>
+                                    <input type="text" name="name" placeholder="Lorem Ipsum" required>
+                                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Controleer dit veld</label>
+                                  </div>
+                                </div>
+                                
+                                <div class="wpforms-submit-container">
+                                  <button type="submit" name="submit" class="wpforms-submit fl-ci-btn fl-ci-white-btn">Solliciteren?</button>
+                                </div>   
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="vacature-details-con-rgt">
+                <div class="vacature-details-con-rgt-inr vacature-details-con-lft-inr">
+                  <h4 class="vacature-details-con-rgt-ttle">Titel</h4>
+                  <ul>
+                    <li>Sagittis nisi, risus cursus sit.M</li>
+                    <li>Orci, sem mi nam et vitae id.</li>
+                    <li>Purus id a pulvinar enim donec.</li>
+                    <li>Et a semper vel maecenast.</li>
+                  </ul>
+                  <h4 class="vacature-details-con-rgt-ttle">Titel</h4>
+                  <ul>
+                    <li>Sagittis nisi, risus cursus sit.M</li>
+                    <li>Orci, sem mi nam et vitae id.</li>
+                    <li>Purus id a pulvinar enim donec.</li>
+                    <li>Et a semper vel maecenast.</li>
+                  </ul>
+                  <h4 class="vacature-details-con-rgt-ttle">Titel</h4>
+                  <ul>
+                    <li>Sagittis nisi, risus cursus sit.M</li>
+                    <li>Orci, sem mi nam et vitae id.</li>
+                    <li>Purus id a pulvinar enim donec.</li>
+                    <li>Et a semper vel maecenast.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <footer class="footer-wrp ftr-top-bdr">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-cntlr ftr-top-bdr-cntlr">
+              <div class="footer-top">
+                <div class="ftr-col ftr-col-1">
+                  <div class="ftr-logo">
+                    <a href="#"><img src="assets/images/hdr-lgo.png"></a>
+                  </div>
+                  <div class="ftr-developed-support">
+                    <span>This website is developed with<br>the support of:</span>
+                    <div class="ftr-developed-lgo">
+                      <a target="_blank" href="#"><img src="assets/images/ftr-dev-lgo.svg"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ftr-col ftr-col-2">
+                  <h6 class="fl-h6 ftr-col-title">Navigatie</h6>
+                  <div class="ftr-menu">
+                    <ul class="reset-list">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Ons Team</a></li>
+                      <li><a href="#">Nieuws</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Vacatures</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ftr-col ftr-col-3">
+                  <h6 class="fl-h6 ftr-col-title">Vakgebieden</h6>
+                  <div class="ftr-menu">
+                    <ul class="reset-list">
+                      <li><a href="#">Publiek<br>en Administratief recht</a></li>
+                      <li><a href="#">Verzekeringsrecht</a></li>
+                      <li><a href="#">Verkeersrecht</a></li>
+                      <li><a href="#">Aansprakelijkheid</a></li>
+                      <li><a href="#">Erfenisrecht</a></li>
+                      <li><a href="#">Familierecht</a></li>
+                      <li><a href="#">Vreemdelingenrecht</a></li>
+                      <li><a href="#">Bemiddeling</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ftr-col ftr-col-4">
+                  <h6 class="fl-h6 ftr-col-title">Over Ons</h6>
+                  <div class="ftr-menu">
+                    <ul class="reset-list">
+                      <li><a href="#">COTTYN Netwerk</a></li>
+                      <li><a href="#">Onze missie</a></li>
+                      <li><a href="#">Onze vissie</a></li>
+                      <li><a href="#">Dienstverlening</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ftr-col ftr-col-5">
+                  <h6 class="fl-h6 ftr-col-title">Contact</h6>
+                  <div class="ftr-contact">
+                    <i class="fas fa-envelope"></i>
+                    <a target="_blank" href="mailto:info@cottyn.eu">info@cottyn.eu</a>
+                  </div>
+                  <div class="ftr-socials">
+                    <ul class="reset-list">
+                      <li class="facebook-icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ftr-developed-support show-sm">
+                <span>This website is developed<br>with the support of:</span>
+                <div class="ftr-developed-lgo">
+                  <a target="_blank" href="#"><img src="assets/images/ftr-dev-lgo.svg"></a>
+                </div>
+              </div>
+              <div class="footer-btm">
+                <div class="ftr-copyright">
+                  <p>&copy; 2021 Cottyn. All rights reserved.</p>
+                </div>
+                <div class="ftr-btm-menu">
+                  <ul class="reset-list">
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                  </ul>
+                </div>
+                <div class="ftr-developed-by">
+                  <p>webdesign by <a href="#">conversal</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
+<script src="assets/slick.slider/slick.js"></script>
+<script src="assets/swiper/swiper-bundle.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/select2/select2.min.js"></script>
+<script src="assets/flatpickr/flatpickr.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

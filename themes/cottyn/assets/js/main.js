@@ -193,6 +193,15 @@ if( $('.expertiseGridSlider').length ){
         $('.header-sticky').removeClass('fixed-hdr');
     }  
 });
+ $(window).scroll(function() { 
+    var scroll = $(window).scrollTop();   
+    if (scroll >= 500) {
+        $('.sticky-nav').addClass('sticky-navbar');
+    } else {
+        $('.sticky-nav').removeClass('sticky-navbar');
+    }  
+});
+
 // tab
 $('.ov-tab-btn ul li a').on('click', function(e){
   e.preventDefault();
@@ -238,9 +247,9 @@ function leftWidth(){
     var windowWidth = $(window).width();
     var containerwidth = $(".container").width();
     var lefttoconWidth = ((windowWidth-containerwidth)/2);
-    var mradd = lefttoconWidth;
+    // var mradd = lefttoconWidth;
     $(".ctn-full-width-img").css({
-      "margin-left":-mradd,
+      "margin-left":-lefttoconWidth,
     });
   }
   leftWidth();
@@ -248,6 +257,8 @@ function leftWidth(){
     leftWidth();
   });
 
+
+$('.select2-ctlr').select2();
 if( $('#mapID').length ){
 var latitude = $('#mapID').data('latitude');
 var longitude = $('#mapID').data('longitude');
@@ -298,6 +309,21 @@ google.maps.event.addDomListener(window, 'load', initialize);
     });
   }, false);
 })();
+
+if( $('.contact-form-wrp').length ){
+  $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
+    $('.wpforms-field input[required],.wpforms-field select[required]').parents('.wpforms-field').addClass('wpforms-has-error');
+    $('.wpforms-field input[required],.wpforms-field select[required]').addClass('wpforms-error');
+  });
+}
+
+
+if( $('.wpforms-error').length ){
+  $('.wpforms-error').on('click', function(){
+    $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
+  });
+}
+
 
 
 /* innerpage buttons */

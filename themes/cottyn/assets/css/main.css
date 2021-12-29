@@ -14,7 +14,7 @@
 @import url('_over-ons.css');
 @import url('_team-overzicht.css');
 @import url('_team-deatail.css');
-@import url('_newus-overzicht.css');
+@import url('_niewus-overzicht.css');
 @import url('_vakgebiden-overzicht.css');
 @import url('_bedankt.css');
 @import url('_404.css');
@@ -22,3 +22,6 @@
 @import url('_faq.css');
 @import url('_vacatures-overzicht.css');
 @import url('_vakgebieden-details.css');
+@import url('_niewus-detail.css');
+@import url('_vacature-deatils.css');
+@import url('_contact-pagina.css')

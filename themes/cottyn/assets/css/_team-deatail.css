@@ -1,6 +1,7 @@
 .tm-detl-lft-img-rgt-desc-cntlr{
 	display: flex;
 	padding-bottom: 50px;
+	margin-bottom: 60px;
 	border-bottom: 1px solid #f3f3f3;
 }
 .tm-detl-lft-img{
@@ -101,6 +102,9 @@ li.tm-detl-linkedin {
 .studies-ctlr ul li:last-child{
 	padding-bottom: 0;
 }
+.Seminaries-ctlr ul li a:hover{
+	color: #616268;
+}
 .studies-ctlr ul li h6 {
     margin-bottom: 5px;
 }
@@ -147,7 +151,7 @@ li.tm-detl-linkedin {
 
 .related-articles-sec{
 	padding-top: 100px;
-	padding-bottom: 55px;
+	padding-bottom: 80px;
 }
 .related-articles-sec .sec-entry-hdr{
 	padding-bottom: 20px;

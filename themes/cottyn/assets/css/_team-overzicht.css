@@ -1,4 +1,5 @@
 .sticky-nav-sec{
+	padding-top: 23px;
 	padding-bottom: 70px;
 }
 .sticky-nav-sec-cntlr{
@@ -28,7 +29,7 @@
     height: 4px;
     width: 100%;
     background: #0084A9;
-    bottom: 1px;
+    bottom: 2px;
     left: 0;
     right: 0;
     opacity: 0;
@@ -43,7 +44,25 @@
 .sticky-nav-sec-cntlr ul li a:hover{
 	color: #0084A9;
 }
-
+.sticky-nav{
+    position: fixed;
+    top: 119px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 9;
+    transform: scale3d(1,0,1);
+    opacity: 0;
+    transition: .5s;
+    transform-origin: top;
+    margin-top: -119px;
+}
+.sticky-navbar{
+	opacity: 1;
+	margin-top: 0px;
+	transform: scale3d(1,1,1);
+	padding-bottom: 0;
+}
 .team-ov-grid-sec{
 	padding-bottom: 20px;
 }

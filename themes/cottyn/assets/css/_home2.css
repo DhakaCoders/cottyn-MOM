@@ -11,7 +11,6 @@
     top: 0;
     left: 0;
     bottom: 0;
-    height: 565px;
     width: 50%;
 }
 .hm-banner-img{
@@ -20,12 +19,14 @@
     border-bottom-right-radius: 286.5px;
 }
 .hm-banner-desc {
-    min-height: 490px;
+    min-height: 530px;
     display: flex;
     align-items: center;
 }
 .hm-banner-desc-cntlr{
 	padding-left: 100px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .hm-banner-desc-cntlr p{
 	color: #fff;
@@ -55,6 +56,7 @@
 }
 .ctn-tex-module-sec-cntlr .sec-entry-hdr{
 	max-width: initial;
+	padding-bottom: 0;
 }
 .ctn-tex-module-sec-inr{
 	display: flex;
@@ -194,13 +196,16 @@
 }
 .expertise-grd-title{
 	margin-bottom: 0;
+	line-height: 1.3;
+	cursor: text;
 }
 
 
 .news-sec .sec-entry-hdr{
 	padding-bottom: 58px;
 }
-.news-sec{
+.news-sec,
+.dfp-btm-grid-module{
 	background: #F3F8FA;
 	padding: 90px 0;
 	position: relative;
